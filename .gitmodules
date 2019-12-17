@@ -7,6 +7,6 @@
 [submodule "search-bar-booking-tool"]
 	path = search-bar-booking-tool
 	url = https://github.com/hrla33-falcons/search-bar-booking-tool
-[submodule "overview-amenities"]
-	path = overview-amenities
-	url = https://github.com/hrla33-falcons/overview-amenities
+[submodule "sdc-service-blake"]
+	path = sdc-service-blake
+	url = https://github.com/objectobject-hr/sdc-service-blake
