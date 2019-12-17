@@ -2,16 +2,36 @@
   font-family: "Lato", sans-serif;
 }
 
+#searchHeader {
+  position: relative;
+  z-index: 50;
+}
+
+#center {
+  display: flex;
+  position: relative;
+}
+
 #leftColumn {
-  float: left;
-  width: 70%;
+  /* float: left; */
+  width: 75%;
   bottom: 50px;
   background-color: white;
+  align-content: flex-start;
+  position: relative;
+}
+
+#map-container {
+  padding: 30px 50px;
 }
 
 #rightColumn {
   float: right;
-  width: 30%;
+  /* align-self: flex-end; */
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 
 #carousel-service {
@@ -19,19 +39,65 @@
   z-index: 10;
 }
 
-.al-sidebar {
+/* .al-sidebar {
   position: relative;
   z-index: 20;
-}
+  width: 403px;
+} */
 
 .al-header-upper-container {
   display: flex;
   justify-content: space-between;
 }
 
-.al-header-options-container {
+/* .al-header-options-container {
   display: flex;
   margin-top: 0;
   margin-left: 0;
   height: 0;
+} */
+
+/* .al-reviews-number-text {
+  font-family: 'Lato', sans-serif;
+} */
+
+/* .al-nav {
+  background-color: white;
+  border-left: 1px solid lightgrey;
+} */
+
+/* .al-feedback-text {
+  margin-top: -0.5px;
+} */
+
+/* .al-check-out-input {
+  left: 780px;
+  top: 80px;
+} */
+
+.al-list-property-button:hover,
+.al-search-button:hover {
+  background: none;
+  border: 1px solid #0067db;
+  transition: all .25s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  box-shadow: inset 0 0 0 1px #0067db;
+}
+
+.similar-carousel {
+  padding-bottom: 80px;
+}
+
+#overview-sticky-nav {
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  /* border-bottom: 1px solid lightgrey; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
