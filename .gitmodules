@@ -1,12 +1,12 @@
-[submodule "Reviews"]
-	path = Reviews
-	url = https://github.com/hrla33-falcons/Reviews
-[submodule "carousel-recommend-listings"]
-	path = carousel-recommend-listings
-	url = https://github.com/hrla33-falcons/carousel-recommend-listings
-[submodule "search-bar-booking-tool"]
-	path = search-bar-booking-tool
-	url = https://github.com/hrla33-falcons/search-bar-booking-tool
+[submodule "sdc-service-aaron"]
+	path = sdc-service-aaron
+	url = https://github.com/objectobject-hr/sdc-service-aaron
 [submodule "sdc-service-blake"]
 	path = sdc-service-blake
 	url = https://github.com/objectobject-hr/sdc-service-blake
+[submodule "sdc-service-david"]
+	path = sdc-service-david
+	url = https://github.com/objectobject-hr/sdc-service-david
+[submodule "sdc-service-steven"]
+	path = sdc-service-steven
+	url = https://github.com/objectobject-hr/sdc-service-steven
