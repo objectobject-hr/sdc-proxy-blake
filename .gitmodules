@@ -1,16 +1,12 @@
 [submodule "sdc-service-aaron"]
 	path = sdc-service-aaron
 	url = https://github.com/objectobject-hr/sdc-service-aaron
-	ignore = dirty
 [submodule "sdc-service-blake"]
 	path = sdc-service-blake
 	url = https://github.com/objectobject-hr/sdc-service-blake
-	ignore = dirty
 [submodule "sdc-service-david"]
 	path = sdc-service-david
 	url = https://github.com/objectobject-hr/sdc-service-david
-	ignore = dirty
 [submodule "sdc-service-steven"]
 	path = sdc-service-steven
 	url = https://github.com/objectobject-hr/sdc-service-steven
-	ignore = dirty
