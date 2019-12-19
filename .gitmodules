@@ -1,6 +1,3 @@
-[submodule "sdc-service-aaron"]
-	path = sdc-service-aaron
-	url = https://github.com/objectobject-hr/sdc-service-aaron
 [submodule "sdc-service-blake"]
 	path = sdc-service-blake
 	url = https://github.com/objectobject-hr/sdc-service-blake
