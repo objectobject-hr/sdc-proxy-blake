@@ -1,6 +1,7 @@
 const { execSync } = require('child_process')
 
-const members = ['aaron', 'blake', 'david', 'steven']
+// const members = ['aaron', 'blake', 'david', 'steven']
+const members = ['blake']
 const services = members.map(member => `sdc-service-${member}`)
 
 const tasks = {
@@ -20,8 +21,8 @@ const tasks = {
   },
   dev: function(cb) {
     let command = `concurrently "npm run dev"`
-    services.map(service => (comman += ` cd ${service} && npm run dev`))
-    command += 'webpack -d'
+    services.map(service => (command += ` "cd ${service} && npm run dev"`))
+    command += ' "webpack -w"'
     execSync(command, { stdio: 'inherit' })
     cb()
   }

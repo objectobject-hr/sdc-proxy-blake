@@ -3,13 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    austin: path.resolve(__dirname, './search-bar-booking-tool/client/src'),
-    kat: path.resolve(__dirname, './overview-amenities/client/src'),
-    matthew: path.resolve(__dirname, './Reviews/client/src'),
-    steve: path.resolve(
-      __dirname,
-      './carousel-recommend-listings/src/components'
-    )
+    // austin: path.resolve(__dirname, './sdc-service-david/client/src'),
+    kat: path.resolve(__dirname, './sdc-service-blake/client/src')
+    // matthew: path.resolve(__dirname, './sdc-service-david/client/src'),
+    // steve: path.resolve(__dirname, './sdc-service-steven/src/components')
   },
   output: {
     path: path.resolve(__dirname, './dist'),

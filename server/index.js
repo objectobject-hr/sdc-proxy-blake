@@ -1,19 +1,14 @@
-// jshint esversion:6
 const express = require('express')
 const proxy = require('http-proxy-middleware')
 const path = require('path')
 const bodyParser = require('body-parser')
 
 const app = express()
+const PORT = 3000
 
-const PORT = 3003
-const axios = require('axios')
-const morgan = require('morgan')
-
-app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, '../client/dist')))
+app.use(express.static(path.join(__dirname, '../dist')))
 
 const services = [{ route: '/details', target: 'http://localhost:3001' }]
 
