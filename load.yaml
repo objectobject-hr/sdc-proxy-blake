@@ -1,0 +1,13 @@
+config:
+  target: 'http://localhost:8080'
+  processor: './load.js'
+  phases:
+    - duration: 30
+      arrivalRate: 100
+scenarios:
+  - flow:
+      - loop:
+          - function: 'generateId'
+          - get:
+              url: '/details?listing_ID={{ id }}'
+        # count: 100
