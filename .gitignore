@@ -3,3 +3,4 @@ client/dist
 .DS_Store
 newrelic.js
 newrelic_agent.log
+.env
