@@ -1,4 +1,5 @@
-require('newrelic')
+// require('newrelic')
+require('dotenv').config()
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
@@ -7,7 +8,7 @@ const { execSync } = require('child_process')
 
 const app = express()
 const proxy = httpProxy.createProxyServer()
-const PORT = 8080
+const PORT = process.env.PORT
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
