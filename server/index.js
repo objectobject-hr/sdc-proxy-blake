@@ -12,11 +12,13 @@ const PORT = process.env.PORT
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, '../client')))
+app.use(express.static(path.join(__dirname, 'client')))
 
-app.all('/details', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3001' })
-})
+// app.all('/details', (req, res) => {
+//   proxy.web(req, res, { target: 'http://localhost:3001' })
+// })
+
+app.get('/', (req, res) => res.send('heyo'))
 
 app.get('/update', (req, res) => {
   console.log('\nupdating dist')
