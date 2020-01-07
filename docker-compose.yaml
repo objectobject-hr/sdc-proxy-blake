@@ -1,17 +1,7 @@
 version: '3'
 services:
-  server:
+  proxy:
     restart: always
-    build:
-      context: ./server
-      dockerfile: Dockerfile
-    volumes:
-      - /app/node_modules
-      - ./server:/app
-  nginx:
-    restart: always
-    build:
-      dockerfile: Dockerfile
-      context: ./nginx
+    build: .
     ports:
       - '80:80'

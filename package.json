@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "docker:run": "docker run -p 80:80 proxy",
+    "docker:build": "docker build -t proxy ."
   },
   "repository": {
     "type": "git",
@@ -17,32 +19,6 @@
     "url": "https://github.com/hrla33-falcons/awayhome-proxy-test/issues"
   },
   "homepage": "https://github.com/hrla33-falcons/awayhome-proxy-test#readme",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "babel-runtime": "^6.26.0",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "gulp": "^4.0.2",
-    "http-proxy": "^1.18.0",
-    "http-proxy-middleware": "^0.20.0",
-    "morgan": "^1.9.1",
-    "nodemon": "^2.0.1",
-    "path": "^0.12.7",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-inlinesvg": "^1.2.0",
-    "request": "^2.88.0",
-    "style-loader": "^1.0.1",
-    "svg-inline-loader": "^0.8.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
