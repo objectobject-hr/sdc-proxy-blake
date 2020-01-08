@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "docker:run": "sudo docker run -p 3000:3000 --restart always proxy",
+    "docker": "sudo docker run -p 3000:3000 --restart always proxy",
     "docker:build": "sudo docker build -t proxy ."
   },
   "repository": {
