@@ -27,4 +27,6 @@ app.get('/loaderio-ded3f00e9f1a093f15839232b30132e4.txt', (req, res) =>
   res.download('loaderio-ded3f00e9f1a093f15839232b30132e4.txt')
 )
 
+app.get('/test', (req, res) => res.send('test'))
+
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))

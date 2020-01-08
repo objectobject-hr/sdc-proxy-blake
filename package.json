@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "docker": "sudo docker run -p 3000:3000 --restart always proxy",
-    "docker:build": "sudo docker build -t proxy ."
+    "docker": "sudo docker run -p 3000:3000 --restart always --name proxy proxy",
+    "docker:build": "sudo docker build -t proxy .",
+    "docker:update": "sudo npm run docker:build && sudo docker restart proxy"
   },
   "repository": {
     "type": "git",
