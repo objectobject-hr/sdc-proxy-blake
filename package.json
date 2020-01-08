@@ -4,10 +4,9 @@
   "description": "Test proxy server for all away home modules",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server",
-    "docker:run": "docker run -p 80:80 proxy",
-    "docker:build": "docker build -t proxy ."
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "docker": "docker run -p 3000:3000 --restart always proxy"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,11 @@
     "url": "https://github.com/hrla33-falcons/awayhome-proxy-test/issues"
   },
   "homepage": "https://github.com/hrla33-falcons/awayhome-proxy-test#readme",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
+    "nodemon": "^2.0.2"
+  },
   "devDependencies": {}
 }
