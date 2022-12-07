@@ -22,7 +22,7 @@
   "homepage": "https://github.com/hrla33-falcons/awayhome-proxy-test#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "http-proxy-middleware": "^0.20.0",
     "nodemon": "^2.0.2"
   },
